@@ -1,0 +1,56 @@
+public class Employee {
+
+    public int emp_ID;
+    public String name;
+    public String depart;
+    public double salary;
+    public double bonus;
+    public boolean resident;
+
+    public Employee() {
+
+    }
+
+    public Employee(int id , String n) {
+        emp_ID = id;
+        name = n;
+    }
+
+    public Employee(int id , String n , boolean res) {
+        emp_ID = id;
+        name = n;
+        resident = res;
+    }
+
+    public Employee(int id , String n , String dep , double sal , double bon , boolean res) {
+        emp_ID = id;
+        name = n;
+        depart = dep;
+        salary = sal;
+        bonus = bon;
+        resident = res;
+    }
+
+    public void setSalary (double sal) {
+        salary = sal;
+    }
+
+    public void setSalary (double sal , double bon) {
+        salary = sal;
+        bonus = bon;
+    }
+
+    public void setDepart (String dep) {
+        depart = dep;
+    }
+
+    public void setEmp_ID (int id) {
+        emp_ID = id;
+    }
+
+    public void print_Emp_Dara() {
+        System.out.println(emp_ID + name + depart + salary + bonus + resident );
+    }
+
+
+}
